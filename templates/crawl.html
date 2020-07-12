@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Login</h1>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <form method=post>
+    <dl>
+      <!-- <dt>Username:
+      <dd><input type=text name=username value="{{
+          request.form.username }}">
+      <dt>Password:
+      <dd><input type=password name=password> -->
+      <dt>Language:
+        <dd><input type=text name=lang value="{{
+            request.form.lang }}">
+      <dt>Location:
+        <dd><input type=text name=loc value="{{
+            request.form.loc }}">
+      <dt>Pages:
+        <dd><input type=number name=pages value="{{
+            request.form.pages }}">
+    </dl>
+    <p><input type=submit value=Crawl>
+  </form>
+{% endblock %}
