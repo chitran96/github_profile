@@ -18,3 +18,4 @@ class GithubProfileItem(scrapy.Item):
     company = scrapy.Field()
     name = scrapy.Field()
     email = scrapy.Field()
+    git_link = scrapy.Field()
